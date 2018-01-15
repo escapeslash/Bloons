@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController" storyboardIdentifier="launchScreen" useStoryboardIdentifierAsRestorationIdentifier="YES">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="10497" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
+                                <variation key="heightClass=regular-widthClass=compact" image="Content/Images/Original/LaunchScreenImage.png"/>
+                            </imageView>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="10497"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="10498"/>
+                                <exclude reference="10499"/>
+                                <exclude reference="10500"/>
+                                <exclude reference="10501"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="10497"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="10498"/>
+                                <include reference="10499"/>
+                                <include reference="10500"/>
+                                <include reference="10501"/>
+                            </mask>
+                        </variation>
+                        <constraints>
+                            <constraint id="10498" firstItem="Llm-lL-Icb" firstAttribute="bottom" secondItem="10497" secondAttribute="top" constant="20"/>
+                            <constraint id="10499" firstItem="Ze5-6b-2t3" firstAttribute="leadingMargin" secondItem="10497" secondAttribute="leading" constant="20"/>
+                            <constraint id="10500" firstItem="10497" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" constant="20"/>
+                            <constraint id="10501" firstItem="10497" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top"/>
+                        </constraints>
+                        <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                    </view>
+                    <connections/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Content/Images/Balloon:255,191,46.png" width="160" height="160"/>
+        <image name="Content/Images/Ocean.png" width="2975" height="688"/>
+        <image name="Content/Images/HueOff.png" width="160" height="160"/>
+        <image name="Content/Images/HueOn.png" width="160" height="160"/>
+        <image name="Content/Images/ActivityIndicator.png" width="160" height="160"/>
+        <image name="Content/Images/Balloon:49,98,165.png" width="160" height="160"/>
+        <image name="Content/Images/Balloon:230,90,93.png" width="160" height="160"/>
+        <image name="Content/Images/Beach.png" width="2394" height="262"/>
+        <image name="Content/Images/Balloon:255,1,100.png" width="160" height="160"/>
+        <image name="Content/Images/Balloon:224,221,178.png" width="160" height="160"/>
+        <image name="Content/Images/Balloon:68,67,68.png" width="160" height="160"/>
+        <image name="Content/Images/Boat.png" width="160" height="160"/>
+        <image name="Content/Images/LaunchScreenImage.png" width="2160" height="3840"/>
+        <image name="Content/Images/ExplosionSprite.png" width="160" height="160"/>
+        <image name="Content/Images/Menu.png" width="160" height="160"/>
+        <image name="Content/Images/SoundOff.png" width="160" height="160"/>
+        <image name="Content/Images/SoundOn.png" width="160" height="160"/>
+        <image name="Content/Images/FacebookConnected.png" width="160" height="160"/>
+        <image name="Content/Images/FacebookDisconnected.png" width="160" height="160"/>
+        <image name="Content/Images/TwitterConnected.png" width="160" height="160"/>
+        <image name="Content/Images/TwitterDisconnected.png" width="160" height="160"/>
+        <image name="Content/Images/Original/ActivityIndicator.png" width="160" height="160"/>
+        <image name="Content/Images/Original/Balloon:190,211,97.png" width="160" height="160"/>
+        <image name="Content/Images/Original/Balloon:224,221,178.png" width="160" height="160"/>
+        <image name="Content/Images/Original/Balloon:230,90,93.png" width="160" height="160"/>
+        <image name="Content/Images/Original/Balloon:255,1,100.png" width="160" height="160"/>
+        <image name="Content/Images/Original/Balloon:255,191,46.png" width="160" height="160"/>
+        <image name="Content/Images/Original/Balloon:49,98,165.png" width="160" height="160"/>
+        <image name="Content/Images/Original/Balloon:68,67,68.png" width="160" height="160"/>
+        <image name="Content/Images/Original/Balloon:90,208,236.png" width="160" height="160"/>
+        <image name="Content/Images/Original/Balloon:93,32,124.png" width="160" height="160"/>
+        <image name="Content/Images/Original/Beach.png" width="2394" height="262"/>
+        <image name="Content/Images/Original/Boat.png" width="160" height="160"/>
+        <image name="Content/Images/Original/Cloud.png" width="320" height="320"/>
+        <image name="Content/Images/Original/ExplosionSprite.png" width="160" height="160"/>
+        <image name="Content/Images/Original/FacebookConnected.png" width="160" height="160"/>
+        <image name="Content/Images/Original/FacebookDisconnected.png" width="160" height="160"/>
+        <image name="Content/Images/Original/HueOff.png" width="160" height="160"/>
+        <image name="Content/Images/Original/HueOn.png" width="160" height="160"/>
+        <image name="Content/Images/Original/LaunchScreenImage.png" width="2450" height="3840"/>
+        <image name="Content/Images/Original/Menu.png" width="160" height="160"/>
+        <image name="Content/Images/Original/Ocean.png" width="2975" height="688"/>
+        <image name="Content/Images/Original/SoundOff.png" width="160" height="160"/>
+        <image name="Content/Images/Original/SoundOn.png" width="160" height="160"/>
+        <image name="Content/Images/Original/StopwatchBackground.png" width="3230" height="654"/>
+        <image name="Content/Images/Original/Sun.png" width="640" height="640"/>
+        <image name="Content/Images/Original/TwitterConnected.png" width="160" height="160"/>
+        <image name="Content/Images/Original/TwitterDisconnected.png" width="160" height="160"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina47"/>
+    </simulatedMetricsContainer>
+</document>

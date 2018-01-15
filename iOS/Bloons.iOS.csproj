@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{E6D4745E-49DA-41B2-B37B-DFFF0F151EF6}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Bloons.iOS</RootNamespace>
+    <AssemblyName>Bloons.iOS</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: Krishna Veluri (PKR6UY5L2K)</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <IOSDebuggerPort>56220</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <IOSDebugOverWiFi>true</IOSDebugOverWiFi>
+    <CodesignProvision>VS: com.krishnaveluri.bloons Development</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: Krishna Veluri (PKR6UY5L2K)</CodesignKey>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>VS: com.krishnaveluri.bloons Development</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: Krishna Veluri (PKR6UY5L2K)</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>VS: com.krishnaveluri.bloons Development</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: Krishna Veluri (PKR6UY5L2K)</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IOSDebuggerPort>45152</IOSDebuggerPort>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>VS: com.krishnaveluri.bloons Development</CodesignProvision>
+    <IOSDebugOverWiFi>false</IOSDebugOverWiFi>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="box2d">
+      <HintPath>..\packages\CocosSharp.1.7.1.0\lib\Xamarin.iOS10\box2d.dll</HintPath>
+    </Reference>
+    <Reference Include="CocosSharp">
+      <HintPath>..\packages\CocosSharp.1.7.1.0\lib\Xamarin.iOS10\CocosSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Lidgren.Network">
+      <HintPath>..\packages\CocosSharp.1.7.1.0\lib\Xamarin.iOS10\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>..\packages\CocosSharp.1.7.1.0\lib\Xamarin.iOS10\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework.Net">
+      <HintPath>..\packages\CocosSharp.1.7.1.0\lib\Xamarin.iOS10\MonoGame.Framework.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK-1.0" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Q42.HueApi.ColorConverters">
+      <HintPath>bin\iPhoneSimulator\Debug\Q42.HueApi.ColorConverters.dll</HintPath>
+    </Reference>
+    <Reference Include="Q42.HueApi">
+      <HintPath>..\packages\Q42.HueApi.3.5.0\lib\netstandard1.1\Q42.HueApi.dll</HintPath>
+    </Reference>
+    <Reference Include="SatelliteMenu">
+      <HintPath>..\Components\satellite-menu-1.2.1.0\lib\ios-unified\SatelliteMenu.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small-40%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small-40%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-60%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-60%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Content\" />
+    <Folder Include="Content\Images\" />
+    <Folder Include="Content\Fonts\" />
+    <Folder Include="Content\Sounds\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Main.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="ViewController.cs" />
+    <Compile Include="ViewController.designer.cs">
+      <DependentUpon>ViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectorDataSource.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Content\Fonts\JosefinSans.ttf" />
+    <BundleResource Include="Content\Images\Original\ActivityIndicator.png" />
+    <BundleResource Include="Content\Images\Original\Balloon:190,211,97.png" />
+    <BundleResource Include="Content\Images\Original\Balloon:224,221,178.png" />
+    <BundleResource Include="Content\Images\Original\Balloon:230,90,93.png" />
+    <BundleResource Include="Content\Images\Original\Balloon:255,1,100.png" />
+    <BundleResource Include="Content\Images\Original\Balloon:255,191,46.png" />
+    <BundleResource Include="Content\Images\Original\Balloon:49,98,165.png" />
+    <BundleResource Include="Content\Images\Original\Balloon:68,67,68.png" />
+    <BundleResource Include="Content\Images\Original\Balloon:90,208,236.png" />
+    <BundleResource Include="Content\Images\Original\Balloon:93,32,124.png" />
+    <BundleResource Include="Content\Images\Original\Beach.png" />
+    <BundleResource Include="Content\Images\Original\Boat.png" />
+    <BundleResource Include="Content\Images\Original\Cloud.png" />
+    <BundleResource Include="Content\Images\Original\ExplosionSprite.png" />
+    <BundleResource Include="Content\Images\Original\FacebookConnected.png" />
+    <BundleResource Include="Content\Images\Original\FacebookDisconnected.png" />
+    <BundleResource Include="Content\Images\Original\HueOff.png" />
+    <BundleResource Include="Content\Images\Original\HueOn.png" />
+    <BundleResource Include="Content\Images\Original\LaunchScreenImage.png" />
+    <BundleResource Include="Content\Images\Original\Menu.png" />
+    <BundleResource Include="Content\Images\Original\Ocean.png" />
+    <BundleResource Include="Content\Images\Original\SoundOff.png" />
+    <BundleResource Include="Content\Images\Original\SoundOn.png" />
+    <BundleResource Include="Content\Images\Original\StopwatchBackground.png" />
+    <BundleResource Include="Content\Images\Original\Sun.png" />
+    <BundleResource Include="Content\Images\Original\TwitterConnected.png" />
+    <BundleResource Include="Content\Images\Original\TwitterDisconnected.png" />
+    <BundleResource Include="Content\Sounds\Original\BalloonTap.mp3" />
+    <BundleResource Include="Content\Sounds\Original\FireworksRocket.wav" />
+    <BundleResource Include="Content\Sounds\Original\BalloonPop.mp3" />
+    <BundleResource Include="Content\Sounds\Original\BackgroundMusic1.mp3" />
+    <BundleResource Include="Content\Sounds\Original\BackgroundMusic2.mp3" />
+    <BundleResource Include="Content\Sounds\Original\BackgroundMusic3.mp3" />
+    <BundleResource Include="Content\Sounds\Original\BackgroundMusic4.mp3" />
+    <BundleResource Include="Content\Sounds\Original\BackgroundMusic5.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="satellite-menu">
+      <Version>1.2.1.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <Import Project="..\Bloons\Bloons.projitems" Label="Shared" Condition="Exists('..\Bloons\Bloons.projitems')" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets')" />
+</Project>
