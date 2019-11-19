@@ -44,8 +44,8 @@ namespace Bloons.Droid
 		public partial class Layout
 		{
 			
-			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			// aapt resource value: 0x7F010000
+			public const int Main = 2130771968;
 			
 			static Layout()
 			{
@@ -60,7 +60,7 @@ namespace Bloons.Droid
 		public partial class Mipmap
 		{
 			
-			// aapt resource value: 0x7f020000
+			// aapt resource value: 0x7F020000
 			public const int Icon = 2130837504;
 			
 			static Mipmap()
@@ -76,11 +76,11 @@ namespace Bloons.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040001
-			public const int app_name = 2130968577;
+			// aapt resource value: 0x7F030000
+			public const int app_name = 2130903040;
 			
-			// aapt resource value: 0x7f040000
-			public const int hello = 2130968576;
+			// aapt resource value: 0x7F030001
+			public const int hello = 2130903041;
 			
 			static String()
 			{
