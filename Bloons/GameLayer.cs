@@ -9,6 +9,7 @@ namespace Bloons
 {
     public class GameLayer : CCLayerColor
     {
+        // Declarations
         int layerWidth = 0;
         int layerHeight = 0;
         string appName = string.Empty;
